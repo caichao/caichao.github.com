@@ -1,0 +1,179 @@
+html {
+  background: #f6f7f8;
+  color: #1f2933;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d8dee4;
+}
+
+.portrait {
+  width: 180px;
+  height: auto;
+  border: 1px solid #c9d1d9;
+}
+
+h1,
+h2,
+h3 {
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2.1rem;
+}
+
+h2 {
+  margin: 34px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+a {
+  color: #0f5f8c;
+}
+
+a:hover,
+a:focus {
+  color: #093f5f;
+}
+
+.subtitle {
+  margin-bottom: 12px;
+  color: #4b5563;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 22px 0 4px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d8dee4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-list li,
+li {
+  margin-bottom: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-list {
+  display: grid;
+  gap: 18px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.project img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #d8dee4;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.service-list {
+  columns: 1;
+  list-style-position: outside;
+  padding-left: 1.3rem;
+}
+
+.service-list li {
+  margin-bottom: 6px;
+}
+
+.photo-section {
+  margin-bottom: 34px;
+}
+
+.photo-section img {
+  display: block;
+  margin: 16px auto;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page {
+    padding: 24px 16px 48px;
+  }
+
+  .profile,
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    align-items: start;
+  }
+
+  .project img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .portrait {
+    width: 150px;
+  }
+}
