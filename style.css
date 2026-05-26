@@ -95,6 +95,34 @@ a:focus {
   text-decoration: none;
 }
 
+.publication-years {
+  margin-top: 22px;
+}
+
+.publication-year {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 22px;
+  padding: 22px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.publication-year h2 {
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+  color: #374151;
+  font-size: 1.2rem;
+}
+
+.publication-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
 .publication-list li,
 li {
   margin-bottom: 8px;
@@ -143,12 +171,23 @@ img {
 }
 
 .photo-section {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
-.photo-section img {
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.photo-grid img {
   display: block;
-  margin: 16px auto;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #d8dee4;
+  background: #f6f7f8;
 }
 
 @media (max-width: 720px) {
@@ -171,6 +210,20 @@ img {
 
   .project img {
     aspect-ratio: 16 / 9;
+  }
+
+  .publication-year {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 18px 0;
+  }
+
+  .publication-year h2 {
+    position: static;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
   }
 
   .portrait {
