@@ -1,0 +1,53 @@
+# ============================================================
+#  相册清单 albums.txt  —— photo.html 由 build_photos.py 自动生成
+# ============================================================
+#
+#  【想加一个新城市的照片？】只需三步：
+#    1) 把照片放进 images/ 文件夹，命名为「城市名 + 编号」，例如：
+#         Hangzhou1.JPG   Hangzhou2.JPG   Hangzhou3.JPG
+#    2) 在本文件末尾加一行： Hangzhou | 杭州 Hangzhou
+#    3) 双击 update_photos.bat
+#       —— 自动排版、生成网页、提交并上传到网站。
+#
+#  【想给已有相册再加照片？】更简单，只要两步：
+#    1) 把新照片放进 images/（沿用同样的城市名前缀，编号往后接）
+#    2) 双击 update_photos.bat   （本文件无需改动）
+#
+# ------------------------------------------------------------
+#  每行定义一个相册，两种写法：
+#
+#  写法①（推荐，自动收集）：  前缀 | 显示标题
+#     · 前缀 = 图片文件名开头（不分大小写），脚本自动收集
+#       images/ 里所有「前缀+数字」的图片，并按编号排序。
+#     · 显示标题 = 网页上的相册标题，可中英文混排。
+#     例： Fenghuang | Fenghuang 凤凰古城
+#
+#  写法②（显式列表，给名字没规律的老照片用）： 显示标题 ::: 文件1, 文件2
+#     例： Wuhan ::: boat.jpg, eastlake.jpg, wuhan.JPG
+#
+#  · 相册在网页上的顺序 = 本文件从上到下的顺序。
+#  · # 开头的行 与 空行 会被忽略。
+# ------------------------------------------------------------
+
+# ===== 老相册（文件名无统一前缀，用写法②显式列出）=====
+Home       ::: home.jpg, tree.jpg
+Wuhan      ::: boat.jpg, eastlake.jpg, wuhan.JPG, Wuhan_new.JPG
+Shanghai   ::: shanghai.jpg, disney.jpg
+Sichuan    ::: sichuan.jpg, lake.jpg
+Singapore  ::: singapore.jpg, coast.jpg
+Maldives   ::: bridge.jpg, plane.jpg
+Yinchuan   ::: cai.jpg, heart.JPG, desert.JPG, YinChuan1.JPG, YinChuan2.JPG
+Huangshan  ::: mountain_huangshan1.jpg, mountain_huangshan2.jpg, mountain_huangshan3.jpg, HuangShan1.JPG, HuangShan2.JPG
+Chongqing  ::: hotspot.JPG
+Yichang    ::: scenary.JPG, landscape.JPG, Yichang1.JPG, Yichang2.JPG, Yichang3.JPG, Yichang4.JPG, Yichang5.JPG, GuiZhou1.JPG
+Moscow     ::: clinm.jpg, redsquare.jpg, tair.jpg
+
+# ===== 新相册（文件名 = 城市前缀+编号，用写法①自动收集）=====
+Fenghuang  | Fenghuang 凤凰古城
+Libo       | Libo 荔波
+ShuZhou    | Suzhou 苏州
+Qingdao    | Qingdao 青岛
+HuangShi   | Huangshi 黄石
+
+# ↑ 以后新增城市，照着上面加一行就行，例如：
+# Hangzhou | 杭州 Hangzhou
