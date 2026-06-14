@@ -505,3 +505,185 @@ img {
         width: 140px;
     }
 }
+
+/* ============================================
+   Legacy content styles (index / publications / patents)
+   Restyled to match the card-based theme above.
+   ============================================ */
+
+/* Generic content section */
+.content-area section {
+    margin-bottom: 2.2rem;
+}
+
+.content-area section > h2 {
+    font-size: 1.25rem;
+    color: #1a3a5c;
+    font-weight: 600;
+    border-left: 4px solid #2980b9;
+    padding-left: 0.75rem;
+    margin-bottom: 0.9rem;
+}
+
+.content-area section p {
+    margin-bottom: 0.8rem;
+}
+
+.content-area section ul,
+.content-area section ol {
+    padding-left: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-area section li {
+    margin-bottom: 0.4rem;
+}
+
+/* Home profile block */
+.profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.profile .portrait {
+    flex: 0 0 180px;
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: none;
+}
+
+.profile > div {
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile h1 {
+    font-size: 1.7rem;
+    color: #1a3a5c;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.profile .subtitle {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.profile p {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Publications */
+.publication-years {
+    margin-top: 0;
+}
+
+.publication-year {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 1.5rem;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-year h2 {
+    position: sticky;
+    top: 16px;
+    align-self: start;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #2980b9;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.publication-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.publication-list li {
+    margin-bottom: 0.6rem;
+    font-size: 0.93rem;
+    line-height: 1.6;
+}
+
+/* Projects / Patents legacy rows */
+.project {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom: 1.2rem;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+}
+
+.project img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.project h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    border: none;
+    padding: 0;
+}
+
+.project p {
+    margin-bottom: 0.3rem;
+    font-size: 0.92rem;
+}
+
+/* Reviewer service list */
+.service-list {
+    columns: 2;
+    list-style-position: outside;
+    padding-left: 1.4rem;
+}
+
+.service-list li {
+    margin-bottom: 0.35rem;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .publication-year {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .publication-year h2 {
+        position: static;
+    }
+
+    .service-list {
+        columns: 1;
+    }
+}
