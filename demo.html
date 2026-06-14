@@ -1,181 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects - Chao Cai</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Chao Cai 蔡超</title>
+    <link rel="stylesheet" href="style-cards.css">
 </head>
 <body>
-  <main class="page">
-    <h1>Projects</h1>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html">About</a>
-      <a href="publications.html">Publications</a>
-      <a href="demo.html">Projects</a>
-      <a href="patents.html">Patents</a>
-      <a href="photo.html">Photos</a>
-    </nav>
 
-    <div class="project-list">
-      <article class="project">
-        <img src="images/pinn.png" alt="EarPCG system">
-        <div>
-          <h2>Earables for PCG Recovery</h2>
-          <p>We leverage physics-informed neural networks to recover PCG from in-ear sounds. We also find that PCG signals contain blood pressure information.</p>
-          <p><a href="proj_dirs/earpcg.html">Project page</a></p>
+<!-- Header -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-identity">
+            <img class="header-photo" src="images/caichao.jpg" alt="Chao Cai">
+            <div class="header-text">
+                <h1>Chao Cai 蔡超</h1>
+                <p>Associate Professor, College of Life Science and Technology, HUST</p>
+            </div>
         </div>
-      </article>
-
-      <article class="project">
-        <img src="images/daq.jpeg" alt="High-speed data acquisition platform">
-        <div>
-          <h2>High-Speed Multi-Channel Data Acquisition System</h2>
-          <p>We build a 64-channel 100 MS/s data acquisition platform. It can be chained together for PET readout electronics, ultrasonic sensing, and other spatial sampling applications.</p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/temp_tag.jpg" alt="Wireless powered temperature tag">
-        <div>
-          <h2>Wireless Powered Passive Temperature Tag</h2>
-          <p>We build a wireless powered temperature tag with high precision. The tag harvests energy from magnetic resonance, communicates up to 50 cm, and is waterproof.</p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/tracking.png" alt="Crane stabilization tracking system">
-        <div>
-          <h2>Computer Vision Based Crane Stabilization System</h2>
-          <p>We use computer vision to track cargo on a crane and emulate an unstable board at sea. The support point can move to reduce cargo motion relative to the ground.</p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/remvt.png" alt="REMVT method">
-        <div>
-          <h2>REMVT: Resource-Efficient Energy Characterization</h2>
-          <p>REMVT improves conventional MVT by reducing logic resources and increasing energy characterization resolution.</p>
-          <p><a href="proj_dirs/remvt.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/topo.png" alt="TwinPop TDC">
-        <div>
-          <h2>TwinPop: FPGA-Based Time-to-Digital Converter</h2>
-          <p>TwinPop uses fewer chain resources than conventional tapped delay line TDC designs while keeping low dead time and improving resilience to temperature fluctuations.</p>
-          <p><a href="proj_dirs/topo.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/parcha.png" alt="ParCha TDC">
-        <div>
-          <h2>ParCha: Parallel Short-Chain TDC</h2>
-          <p>ParCha folds a long delay chain into several short parallel pieces to reduce delay-cell heterogeneity and calibration effort.</p>
-          <p><a href="proj_dirs/parcha.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/peak_detector.png" alt="FPGA peak detector">
-        <div>
-          <h2>Analog Peak Detection Using FPGA Solutions</h2>
-          <p>We design a compact, flexible, and resource-efficient analog peak detection circuit using FPGA-only solutions.</p>
-          <p><a href="proj_dirs/peak.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/earace.jpg" alt="EarAce platform">
-        <div>
-          <h2>EarAce: Earable Acoustic Sensing Platform</h2>
-          <p>EarAce handles hardware heterogeneity and provides flexible control of audio facilities for in-ear acoustic sensing.</p>
-          <p><a href="proj_dirs/earace.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/hrcss.gif" alt="HRCSS acoustic communication">
-        <div>
-          <h2>HRCSS: Aerial Acoustic Communication</h2>
-          <p>HRCSS uses a loose orthogonality condition to overlap multiple chirp carriers and improve data rate under dynamic channel conditions.</p>
-          <p><a href="proj_dirs/hrcss.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/hi3861.png" alt="Harmony OS WiFi sensing platform">
-        <div>
-          <h2>WiFi Sensing on IoT Devices</h2>
-          <p>We design a WiFi sensing platform based on the Hi3861 IoT chipset and HUAWEI Harmony OS.</p>
-          <p><a href="proj_dirs/harmony.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/tesser_pace.png" alt="PACE passive acoustic localization">
-        <div>
-          <h2>PACE: Passive Acoustic Localization</h2>
-          <p>We design a passive acoustic localization and tracking system for multiple walking persons.</p>
-          <p><a href="proj_dirs/pace.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/AcuTe_tesser.png" alt="AcuTe acoustic thermometer">
-        <div>
-          <h2>AcuTe: Acoustic Thermometer</h2>
-          <p>We design an algorithm that enables a single smartphone to sense ambient temperature.</p>
-          <p><a href="proj_dirs/acute.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/sst_app.png" alt="Software Sonic Thermometer">
-        <div>
-          <h2>SST: Software Sonic Thermometer</h2>
-          <p>Our algorithm uses the relationship between sound propagation speed and temperature for ambient temperature sensing.</p>
-          <p><a href="proj_dirs/sst.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/asdr_board.jpg" alt="Acoustic software defined platform">
-        <div>
-          <h2>ASDP: Acoustic Software Defined Platform</h2>
-          <p>We design a general benchmarking platform for acoustic communication and sensing.</p>
-          <p><a href="proj_dirs/asdr.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/aalts.png" alt="AALTS localization system">
-        <div>
-          <h2>AALTS: Acoustic Indoor Localization</h2>
-          <p>We design an asynchronous acoustic indoor localization system for target localization and tracking.</p>
-          <p><a href="proj_dirs/aalts.html">Project page</a></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/hackman.png" alt="HackMan millimeter wave hardware">
-        <div>
-          <h2>HackMan: Millimeter-Wave Measurement Study</h2>
-          <p>We design an online tool for tuning antenna coefficients on commodity millimeter-wave hardware.</p>
-        </div>
-      </article>
-
-      <article class="project">
-        <img src="images/motionbeep.png" alt="MotionBeep system">
-        <div>
-          <h2>MotionBeep: Acoustic Fitness Game</h2>
-          <p>MotionBeep enables precise long-distance ranging even in the presence of severe Doppler effects.</p>
-          <p><a href="proj_dirs/motionbeep.html">Project page</a></p>
-        </div>
-      </article>
     </div>
-  </main>
+</header>
+
+<!-- Navigation -->
+<nav class="main-nav">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="demo.html" class="active">Projects</a></li>
+            <li><a href="patents.html">Patents</a></li>
+            <li><a href="photo.html">Photos</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content-area">
+    <div class="container">
+
+        <div class="page-title">
+            <h2>Research Projects</h2>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img class="card-img" src="images/pinn.png" alt="EarPCG system">
+                <div class="card-body">
+                    <h4>Earables for PCG Recovery</h4>
+                    <p>We leverage physics-informed neural networks to recover PCG from in-ear sounds. We also find that PCG signals contain blood pressure information.</p>
+                    <a class="card-link" href="proj_dirs/earpcg.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img class="card-img" src="images/daq.jpeg" alt="High-speed data acquisition platform">
+                <div class="card-body">
+                    <h4>High-Speed Multi-Channel Data Acquisition System</h4>
+                    <p>We build a 64-channel 100 MS/s data acquisition platform. It can be chained together for PET readout electronics, ultrasonic sensing, and other spatial sampling applications.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img class="card-img" src="images/temp_tag.jpg" alt="Wireless powered temperature tag">
+                <div class="card-body">
+                    <h4>Wireless Powered Passive Temperature Tag</h4>
+                    <p>We build a wireless powered temperature tag with high precision. The tag harvests energy from magnetic resonance, communicates up to 50 cm, and is waterproof.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img class="card-img" src="images/tracking.png" alt="Crane stabilization tracking system">
+                <div class="card-body">
+                    <h4>Computer Vision Based Crane Stabilization System</h4>
+                    <p>We use computer vision to track cargo on a crane and emulate an unstable board at sea. The support point can move to reduce cargo motion relative to the ground.</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <img class="card-img" src="images/remvt.png" alt="REMVT method">
+                <div class="card-body">
+                    <h4>REMVT: Resource-Efficient Energy Characterization</h4>
+                    <p>REMVT improves conventional MVT by reducing logic resources and increasing energy characterization resolution.</p>
+                    <a class="card-link" href="proj_dirs/remvt.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <img class="card-img" src="images/topo.png" alt="TwinPop TDC">
+                <div class="card-body">
+                    <h4>TwinPop: FPGA-Based Time-to-Digital Converter</h4>
+                    <p>TwinPop uses fewer chain resources than conventional tapped delay line TDC designs while keeping low dead time and improving resilience to temperature fluctuations.</p>
+                    <a class="card-link" href="proj_dirs/topo.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card">
+                <img class="card-img" src="images/parcha.png" alt="ParCha TDC">
+                <div class="card-body">
+                    <h4>ParCha: Parallel Short-Chain TDC</h4>
+                    <p>ParCha folds a long delay chain into several short parallel pieces to reduce delay-cell heterogeneity and calibration effort.</p>
+                    <a class="card-link" href="proj_dirs/parcha.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card">
+                <img class="card-img" src="images/peak_detector.png" alt="FPGA peak detector">
+                <div class="card-body">
+                    <h4>Analog Peak Detection Using FPGA Solutions</h4>
+                    <p>We design a compact, flexible, and resource-efficient analog peak detection circuit using FPGA-only solutions.</p>
+                    <a class="card-link" href="proj_dirs/peak.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card">
+                <img class="card-img" src="images/earace.jpg" alt="EarAce platform">
+                <div class="card-body">
+                    <h4>EarAce: Earable Acoustic Sensing Platform</h4>
+                    <p>EarAce handles hardware heterogeneity and provides flexible control of audio facilities for in-ear acoustic sensing.</p>
+                    <a class="card-link" href="proj_dirs/earace.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 10 -->
+            <div class="project-card">
+                <img class="card-img" src="images/hrcss.gif" alt="HRCSS acoustic communication">
+                <div class="card-body">
+                    <h4>HRCSS: Aerial Acoustic Communication</h4>
+                    <p>HRCSS uses a loose orthogonality condition to overlap multiple chirp carriers and improve data rate under dynamic channel conditions.</p>
+                    <a class="card-link" href="proj_dirs/hrcss.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 11 -->
+            <div class="project-card">
+                <img class="card-img" src="images/hi3861.png" alt="Harmony OS WiFi sensing platform">
+                <div class="card-body">
+                    <h4>WiFi Sensing on IoT Devices</h4>
+                    <p>We design a WiFi sensing platform based on the Hi3861 IoT chipset and HUAWEI Harmony OS.</p>
+                    <a class="card-link" href="proj_dirs/harmony.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 12 -->
+            <div class="project-card">
+                <img class="card-img" src="images/tesser_pace.png" alt="PACE passive acoustic localization">
+                <div class="card-body">
+                    <h4>PACE: Passive Acoustic Localization</h4>
+                    <p>We design a passive acoustic localization and tracking system for multiple walking persons.</p>
+                    <a class="card-link" href="proj_dirs/pace.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 13 -->
+            <div class="project-card">
+                <img class="card-img" src="images/AcuTe_tesser.png" alt="AcuTe acoustic thermometer">
+                <div class="card-body">
+                    <h4>AcuTe: Acoustic Thermometer</h4>
+                    <p>We design an algorithm that enables a single smartphone to sense ambient temperature.</p>
+                    <a class="card-link" href="proj_dirs/acute.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 14 -->
+            <div class="project-card">
+                <img class="card-img" src="images/sst_app.png" alt="Software Sonic Thermometer">
+                <div class="card-body">
+                    <h4>SST: Software Sonic Thermometer</h4>
+                    <p>Our algorithm uses the relationship between sound propagation speed and temperature for ambient temperature sensing.</p>
+                    <a class="card-link" href="proj_dirs/sst.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 15 -->
+            <div class="project-card">
+                <img class="card-img" src="images/asdr_board.jpg" alt="Acoustic software defined platform">
+                <div class="card-body">
+                    <h4>ASDP: Acoustic Software Defined Platform</h4>
+                    <p>We design a general benchmarking platform for acoustic communication and sensing.</p>
+                    <a class="card-link" href="proj_dirs/asdr.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 16 -->
+            <div class="project-card">
+                <img class="card-img" src="images/aalts.png" alt="AALTS localization system">
+                <div class="card-body">
+                    <h4>AALTS: Acoustic Indoor Localization</h4>
+                    <p>We design an asynchronous acoustic indoor localization system for target localization and tracking.</p>
+                    <a class="card-link" href="proj_dirs/aalts.html">Project Page →</a>
+                </div>
+            </div>
+
+            <!-- Project 17 -->
+            <div class="project-card">
+                <img class="card-img" src="images/hackman.png" alt="HackMan millimeter wave hardware">
+                <div class="card-body">
+                    <h4>HackMan: Millimeter-Wave Measurement Study</h4>
+                    <p>We design an online tool for tuning antenna coefficients on commodity millimeter-wave hardware.</p>
+                </div>
+            </div>
+
+            <!-- Project 18 -->
+            <div class="project-card">
+                <img class="card-img" src="images/motionbeep.png" alt="MotionBeep system">
+                <div class="card-body">
+                    <h4>MotionBeep: Acoustic Fitness Game</h4>
+                    <p>MotionBeep enables precise long-distance ranging even in the presence of severe Doppler effects.</p>
+                    <a class="card-link" href="proj_dirs/motionbeep.html">Project Page →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2026 Chao Cai 蔡超 &mdash; Huazhong University of Science and Technology</p>
+    </div>
+</footer>
+
 </body>
 </html>

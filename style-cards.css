@@ -1,0 +1,507 @@
+/* ============================================
+   Academic Personal Website Stylesheet
+   Clean, Professional, Information-First
+   ============================================ */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #fafafa;
+}
+
+a {
+    color: #1a5276;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Layout Container --- */
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Top Header Bar --- */
+.site-header {
+    background-color: #1a3a5c;
+    color: #fff;
+    padding: 1.8rem 0 0 0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.site-header .header-identity {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.site-header .header-photo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.site-header .header-text h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.site-header .header-text p {
+    font-size: 0.92rem;
+    opacity: 0.85;
+    margin-top: 0.15rem;
+}
+
+/* --- Navigation --- */
+.main-nav {
+    background-color: #15334d;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 0.7rem 1.3rem;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- Page Title --- */
+.page-title {
+    padding: 2rem 0 0.5rem;
+    border-bottom: 2px solid #1a3a5c;
+    margin-bottom: 2rem;
+}
+
+.page-title h2 {
+    font-size: 1.5rem;
+    color: #1a3a5c;
+    font-weight: 600;
+}
+
+/* --- Main Content Area --- */
+.content-area {
+    padding: 2rem 0 3rem;
+    min-height: 60vh;
+}
+
+/* --- Section Block --- */
+.section-block {
+    margin-bottom: 2.5rem;
+}
+
+.section-block h3 {
+    font-size: 1.15rem;
+    color: #1a3a5c;
+    border-left: 4px solid #2980b9;
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-block p {
+    margin-bottom: 0.8rem;
+}
+
+/* --- Profile Section (Home page) --- */
+.profile-row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.profile-photo {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-details {
+    flex: 1;
+    min-width: 260px;
+}
+
+.profile-details .name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    margin-bottom: 0.2rem;
+}
+
+.profile-details .affiliation {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.profile-details .email {
+    font-size: 0.92rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.profile-details .email a {
+    color: #1a5276;
+}
+
+/* --- Research Interest Tags --- */
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.research-tags li {
+    background: #eaf2f8;
+    color: #1a5276;
+    padding: 0.3rem 0.75rem;
+    border-radius: 3px;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+/* --- Stats Row --- */
+.stats-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 2rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.stat-item {
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+
+.stat-item .number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    line-height: 1.2;
+}
+
+.stat-item .label {
+    display: block;
+    font-size: 0.82rem;
+    color: #777;
+    margin-top: 0.2rem;
+}
+
+/* --- Simple List --- */
+.simple-list {
+    list-style: none;
+    padding: 0;
+}
+
+.simple-list li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.simple-list li:last-child {
+    border-bottom: none;
+}
+
+.simple-list li .meta {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* --- Project Cards --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+}
+
+.project-card .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #eee;
+    display: block;
+}
+
+.project-card .card-body {
+    padding: 1rem 1.2rem 1.2rem;
+}
+
+.project-card .card-body h4 {
+    font-size: 1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.project-card .card-body p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0.7rem;
+}
+
+.project-card .card-link {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #2980b9;
+}
+
+/* --- Publications --- */
+.pub-year-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    margin: 2rem 0 0.8rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.pub-year-heading:first-child {
+    margin-top: 0;
+}
+
+.pub-item {
+    margin-bottom: 0.9rem;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 0.93rem;
+}
+
+.pub-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2980b9;
+}
+
+.pub-item .pub-authors {
+    color: #333;
+}
+
+.pub-item .pub-title {
+    font-weight: 600;
+    color: #222;
+}
+
+.pub-item .pub-venue {
+    color: #1a5276;
+    font-style: italic;
+}
+
+.pub-item .pub-year {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* --- Photo Gallery --- */
+.gallery-group {
+    margin-bottom: 2rem;
+}
+
+.gallery-group h4 {
+    font-size: 1.05rem;
+    color: #1a3a5c;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    border-left: 4px solid #2980b9;
+    padding-left: 0.75rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* --- Patents --- */
+.patent-item {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+}
+
+.patent-item h4 {
+    font-size: 1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.4rem;
+}
+
+.patent-item .patent-meta {
+    font-size: 0.88rem;
+    color: #777;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background: #1a3a5c;
+    color: rgba(255,255,255,0.7);
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+.site-footer a {
+    color: rgba(255,255,255,0.85);
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-header .header-identity {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+    }
+
+    .profile-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .research-tags {
+        justify-content: center;
+    }
+
+    .stats-row {
+        justify-content: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header .header-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .main-nav ul li a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .profile-photo img {
+        width: 140px;
+    }
+}
