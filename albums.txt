@@ -49,5 +49,17 @@ ShuZhou    | Suzhou 苏州
 Qingdao    | Qingdao 青岛
 HuangShi   | Huangshi 黄石
 
+# ===== 2026年国庆川西北环线（9.29-10.3，按行程顺序）=====
+Yala       | 雅拉雪山 Mt. Yala
+Ganzi      | 甘孜 Ganzi
+Cuotong    | 错通翠湖 Cuotong Lakes
+Dege       | 德格北部海子 Dege Lakes
+Xinluhai   | 新路海·雀儿山 Xinluhai & Mt. Que'er
+Ganbai     | 甘白路沿途 Ganbai Road
+Lhalong    | 拉龙措 Lhalong Lake
+Baiyu      | 白玉沿途 Baiyu
+Babahai    | 巴巴海 Baba Lake
+Jinsha     | 金沙江峡谷 Jinsha Gorge
+
 # ↑ 以后新增城市，照着上面加一行就行，例如：
 # Hangzhou | 杭州 Hangzhou
