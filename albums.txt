@@ -61,5 +61,19 @@ Baiyu      | 白玉沿途 Baiyu
 Babahai    | 巴巴海 Baba Lake
 Jinsha     | 金沙江峡谷 Jinsha Gorge
 
+# ===== 2026年10月下旬 滇西北·川西大环线（10.23-10.31）=====
+Dali       | 大理 Dali
+Lijiang    | 丽江 Lijiang
+Hutiaoxia  | 虎跳峡 Tiger Leaping Gorge
+Shangrila  | 香格里拉 Shangri-La
+JinshaWan  | 金沙江大拐弯 Jinsha First Bend
+Meili      | 梅里雪山·日照金山 Meili Sunrise
+Xiangcheng | 乡城 Xiangcheng
+Yading     | 稻城亚丁 Daocheng Yading
+Batang     | 措普沟·格聂雪峰 Cuopugou & Mt. Genie
+Tianlu     | 天路十八弯 Sky Road 18 Bends
+Tagong     | 塔公·八美 Tagong & Bamei
+YalaLake   | 雅拉友措 Yara You Lake
+
 # ↑ 以后新增城市，照着上面加一行就行，例如：
 # Hangzhou | 杭州 Hangzhou
